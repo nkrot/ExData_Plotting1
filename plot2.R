@@ -1,9 +1,6 @@
-#
-#
-#
 
+# read the relevant subset of consumption data
 source("readdata.R")
-
 consumption = readdata()
 
 Sys.setlocale("LC_TIME", "C")

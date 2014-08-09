@@ -1,6 +1,6 @@
 
+# read the relevant subset of consumption data
 source("readdata.R")
-
 consumption = readdata()
 
 Sys.setlocale("LC_TIME", "C")
@@ -10,7 +10,7 @@ days = strptime(paste(consumption$Date, consumption$Time), format="%d/%m/%Y %H:%
 png("plot3.png")
 
 with(consumption, {
-  # TODO: just guessing that Sub_metering_1 provides the correct Y label values
+  # TODO: just guessing that Sub_metering_1 provides the correct Y label size
   plot(days, Sub_metering_1, type = "n",
      xlab = "",
      ylab = "Energy sub metering")
