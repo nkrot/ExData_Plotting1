@@ -34,7 +34,8 @@ with(consumption, {
 
   legend("topright", lwd = par("lwd"),
          col    = c(par("col"), "red", "blue"),
-         legend = c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"))
+         legend = c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"),
+         bty    = "n")
 
   # 4
   plot(datetime, Global_reactive_power,

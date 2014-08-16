@@ -14,3 +14,12 @@ plot(days, consumption$Global_active_power,
      type = "l")
 
 dev.off()
+
+# alternatively:
+#datetime = paste(as.Date(consumption$Date), consumption$Time)
+# and add a new column
+#data$DateAndTime = as.POSIXct(datetime)
+#
+# with(consumption, {}
+#   plot(Sub_metering_1 ~ DateAndTime)
+# })

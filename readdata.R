@@ -46,3 +46,7 @@ readdata = function() {
   return(consumption)
 }
 
+# alternatives
+#consumption_all$Date = as.Date(consumption_all$Date, format="%d/%m/%Y")
+#subset(consumption_all, subset=(Date >= "2007-02-01" & Date <= "2007-02-02"))
+#
